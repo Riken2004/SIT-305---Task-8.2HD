@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@id/animatedBg">
+            <Layout
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"/>
+        </Constraint>
+        <Constraint android:id="@id/toolbar">
+            <Layout
+                motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"/>
+        </Constraint>
+        <Constraint android:id="@id/carousel">
+            <Layout
+                motion:layout_constraintTop_toBottomOf="@id/toolbar"
+                motion:layout_constraintBottom_toTopOf="@id/bottomNav"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"/>
+        </Constraint>
+        <Constraint android:id="@id/fabChat">
+            <Layout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                motion:layout_constraintBottom_toTopOf="@id/bottomNav"
+                motion:layout_constraintEnd_toEndOf="parent"/>
+        </Constraint>
+        <Constraint android:id="@id/bottomNav">
+            <Layout
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintStart_toStartOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent"/>
+        </Constraint>
+    </ConstraintSet>
+
+</MotionScene>

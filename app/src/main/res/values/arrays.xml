@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unit_entries">
+        <item>Steps</item>
+        <item>Kilometers</item>
+    </string-array>
+    <string-array name="unit_values">
+        <item>steps</item>
+        <item>km</item>
+    </string-array>
+</resources>

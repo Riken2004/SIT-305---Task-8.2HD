@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:strokeColor="@color/teal_200"
+        app:strokeWidth="2dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="32dp"
+            android:gravity="center">
+
+            <!-- Quote Text -->
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="“Your quote here…”"
+                android:fontFamily="serif"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="6dp"
+                android:textAlignment="center"/>
+
+            <!-- Author Text -->
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="– Author"
+                android:fontFamily="serif"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:textColor="@color/gray_600"
+                android:layout_marginTop="12dp"
+                android:gravity="center"/>
+
+            <!-- Favorite Button -->
+            <ImageButton
+                android:id="@+id/btnFavorite"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_favorite_border"
+                android:tint="@color/purple_500"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Favorite"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>
